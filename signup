@@ -1,0 +1,117 @@
+
+<html>
+<head>
+	
+	<title>
+		LOGIN PAGE
+	</title>
+	<style >
+		div{
+			height:400 ;
+			width:320;
+			border-bottom-left-radius: 20px;
+			border-top-right-radius: 20px ;
+			background-image:url("1.jpg");
+			border: 10px solid lightsteelblue;
+			margin-left: 600px;
+			margin-top: 100px;
+		}
+		div img {
+			height: 100px;
+			width: 100px;
+			margin-left: 100px;
+			margin-top: -55px;
+		}
+      div form h2{margin-top: -3;
+                	text-align: center;
+                    color: lightpink;
+       
+    -webkit-text-stroke: 1px white;
+    text-shadow: 2px lightblue;
+                  }
+
+     #c{
+     	margin-top: 30px;
+     	margin-left: 50px;
+     	margin-bottom: 20px;
+     	width: 90px;
+     	height: 35px;
+     	background-color: black;
+     	color: white;
+     }
+     #d{
+     	margin-top: 30px;
+     	margin-left: 30px;
+     	margin-bottom: 20px;
+     	width: 90px;
+     	height: 35px;
+     	background-color: black;
+     	color: white;
+     }
+     #e{
+     border-left: 5px solid blue;
+     	border-radius: 55px;
+     	border-right: 5px solid yellow;
+     	border-bottom: 5px solid green;
+     	border-top: 5px solid red;
+     }
+     #user{
+     	    height: 30px;
+          	width: 200px ;
+        	margin-left: 55px;
+          border-bottom: 3px black solid;
+          margin-top: -20px;
+          border-left: none;
+          border-right: none;
+          border-top: none;
+          background: lightblue;
+        
+
+     }
+     #pass{color: red;
+     	margin-top: 30px;
+     	height: 30px;
+          	width: 200px ;
+           margin-left: 55px;
+          border-bottom: 3px black solid;
+          border-left: none;
+          border-right: none;
+          border-top: none;
+          background: none;
+          background: lightblue;
+     }
+     #f{
+     	margin-top: 2px;
+     }
+     #myCheckbox{
+     	margin-top: 25px;
+     	margin-left: 100px;
+     }
+a{
+	margin-left: 100px;
+	color: skyblue;
+	text-decoration: none;
+}
+</style>
+</head>
+<body >
+	<jsp:include page ="home.jsp"></jsp:include>
+	<div>
+		<img id="e" src="logo1.png">
+		<form>
+			<br>
+			<h2>Login</h2>
+			<br><br>
+			<input id="user" type="TEXT" name="user" required placeholder="Enter Username" >
+			
+			<input id="pass" type="PASSWORD" name="pass" placeholder="Enter Password" required>
+		   <input type="checkbox" id="myCheckbox" name="show">
+       <label  for="myCheckbox">Show Password</label>
+			<input id="c" type="SUBMIT" value="Submit">
+			<input id="d" type="RESET" value="Reset">
+			<a href="#">Already Have Account ?</a>
+		</form>
+	</div>
+	
+</body>
+</html>
